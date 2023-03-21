@@ -37,7 +37,7 @@ import cv2
 obj = cv2.VideoCapture(0)
 while(True):
     cap,frame = obj.read()
-    cv2.imshow('img.jpg',frame)
+    cv2.imshow('video.jpg',frame)
     cv2.imwrite("Elephant.jpg",frame)
     if cv2.waitKey(1) == ord('q'):
         break
